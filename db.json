@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "kem",
+      "price": 200,
+      "quantity": 1,
+      "description": "ngon"
+    },
+    {
+      "id": 2,
+      "name": "sữa",
+      "price": 200,
+      "quantity": 2,
+      "description": "ngon"
+    },
+    {
+      "id": 3,
+      "name": "bánh",
+      "price": 200,
+      "quantity": 3,
+      "description": "ngon"
+    },
+    {
+      "name": "áo",
+      "price": "200",
+      "quantity": "2",
+      "description": "đẹp",
+      "id": 4
+    }
+  ]
+}
