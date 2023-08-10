@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Homepage from "./pages/home";
 import AddProduct from "./pages/addproduct";
+import UpdateProductForm from "./pages/updateproduct";
 
 const router = createBrowserRouter([
   {
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
   {
     path: "/add",
     element: <AddProduct />,
+  },
+  {
+    path: "/update/:id",
+    element: <UpdateProductForm />,
   },
 ]);
 function App() {

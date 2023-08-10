@@ -1,31 +1,24 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "kem",
-      "price": 200,
-      "quantity": 1,
-      "description": "ngon"
-    },
-    {
-      "id": 2,
       "name": "sữa",
-      "price": 200,
+      "price": "2003",
       "quantity": 2,
-      "description": "ngon"
+      "description": "ngon",
+      "id": 2
     },
     {
-      "id": 3,
       "name": "bánh",
-      "price": 200,
-      "quantity": 3,
-      "description": "ngon"
+      "price": "2002",
+      "quantity": "5",
+      "description": "ngon",
+      "id": 3
     },
     {
-      "name": "áo",
-      "price": "200",
-      "quantity": "2",
-      "description": "đẹp",
+      "name": "bánh",
+      "price": "2002",
+      "quantity": 3,
+      "description": "ngon",
       "id": 4
     }
   ]

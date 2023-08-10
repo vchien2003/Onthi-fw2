@@ -12,6 +12,10 @@ const productAPI = createApi({
       query: () => "/products",
       providesTags: ["product"],
     }),
+    fetchProductid: builder.query({
+      query: (id: number) => "/products/" + id,
+      providesTags: ["product"],
+    }),
     removeProduct: builder.mutation({
       query: (id: number) => ({
         url: "/products/" + id,
@@ -27,11 +31,23 @@ const productAPI = createApi({
       }),
       invalidatesTags: ["product"],
     }),
+    updateProduct: builder.mutation({
+      query: ({ id, data }: { id: number; data: Partial<IProduct> }) => ({
+        url: `/products/${id}`,
+        method: "PUT",
+        body: data,
+      }),
+      invalidatesTags: ["product"],
+    }),
   }),
 });
+
 export const {
   useFetchProductQuery,
   useRemoveProductMutation,
   useCreateProductMutation,
+  useFetchProductidQuery,
+  useUpdateProductMutation,
 } = productAPI;
+
 export default productAPI;

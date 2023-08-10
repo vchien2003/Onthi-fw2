@@ -56,11 +56,9 @@ const Homepage = () => {
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                 {item.description}
               </td>
+
               <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                {item.origin}
-              </td>
-              <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                <button className="p-2 bg-yellow-400">Update</button>
+                <Link to={`/update/${item.id}`}>Update</Link>
                 <button
                   className="p-2 bg-red-400"
                   onClick={() => onhandleRemove(item.id)}
